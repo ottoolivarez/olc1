@@ -7,7 +7,7 @@ using Irony.Parsing;
 using System.Collections;
 using OLC1_practica1.Juego;
 
-namespace EjemploIrony1
+namespace OLC1_practica1.Compilador
 {
     //hereda de la clase Accion
     class AccionesGramatica : Accion
@@ -108,7 +108,7 @@ namespace EjemploIrony1
                     {
                         if (node.ChildNodes.Count == 1)
                         {
-                            result = action(node.ChildNodes[0]);
+                            result = new frm_menujuego();
                         }
                         //si hay dos no terminales que pueden ser:
                         /* esc componentes
@@ -118,127 +118,58 @@ namespace EjemploIrony1
                          */
                         else if (node.ChildNodes.Count == 2)
                         {
-                            var cmpts = (ArrayList)(action(node.ChildNodes[1]));
+                            var cmpts = (frm_menujuego)(action(node.ChildNodes[1]));
                             var cmp = action(node.ChildNodes[0]);
                             if (node.ChildNodes[1].Token.Value.ToString() == "esc")
                             {
-                                cmpts.Add((Escenario)cmp);
+                                cmpts.escenarios.Add((Escenario)cmp);
                                 result = cmpts;
                             }
                             else if (node.ChildNodes[1].Token.Value.ToString() == "nav")
                             {
-                                cmpts.Add((Escenario)cmp);
+                                cmpts.naves.Add((Nave)cmp);
                                 result = cmpts;
                             }
                             else if (node.ChildNodes[1].Token.Value.ToString() == "def")
                             {
-                                cmpts.Add((Escenario)cmp);
+                                cmpts.defensas.Add((defensa)cmp);
                                 result = cmpts;
                             }
                             else if (node.ChildNodes[1].Token.Value.ToString() == "ene")
                             {
-                                cmpts.Add((Escenario)cmp);
+                                cmpts.enemigos.Add((enemigo)cmp);
                                 result = cmpts;
                             }
                         }
                         break;
                     }
-                case "inicio":
+                case "esc":
                     {
                         //por ser un terminal se retorna su valor como tal.
-                        result = node.Token.Value;
+                        var nuevoesc = new Escenario();
+                        result = nuevoesc;
                         break;
                     }
-                case "escenarios":
+                case "nav":
+                    {
+                        var nuevanave = new Nave();
+                        result = nuevanave;
+                        break;
+                    }
+                case "def":
                     {
                         //por ser un terminal se retorna su valor como tal.
-                        result = node.Token.Value;
+                        var nuevadef = new defensa();
+                        result = nuevadef;
                         break;
                     }
-                case "fondo":
+                case "ene":
                     {
-                        //por ser un terminal se retorna su valor como tal.
-                        result = node.Token.Value;
+                        var nuevoene = new enemigo();
+                        result = nuevoene;
                         break;
                     }
-                case "sonido":
-                    {
-                        //por ser un terminal se retorna su valor como tal.
-                        result = node.Token.Value;
-                        break;
-                    }
-                case "naves":
-                    {
-                        //por ser un terminal se retorna su valor como tal.
-                        result = node.Token.Value;
-                        break;
-                    }
-                case "imagen_nave":
-                    {
-                        //por ser un terminal se retorna su valor como tal.
-                        result = node.Token.Value;
-                        break;
-                    }
-                case "imagen_disparo":
-                    {
-                        //por ser un terminal se retorna su valor como tal.
-                        result = node.Token.Value;
-                        break;
-                    }
-                case "sonido_disparo":
-                    {
-                        //por ser un terminal se retorna su valor como tal.
-                        result = node.Token.Value;
-                        break;
-                    }
-                case "ataque":
-                    {
-                        //por ser un terminal se retorna su valor como tal.
-                        result = node.Token.Value;
-                        break;
-                    }
-                case "vida":
-                    {
-                        //por ser un terminal se retorna su valor como tal.
-                        result = node.Token.Value;
-                        break;
-                    }
-                case "defensas":
-                    {
-                        //por ser un terminal se retorna su valor como tal.
-                        result = node.Token.Value;
-                        break;
-                    }
-                case "imagen_defensa":
-                    {
-                        //por ser un terminal se retorna su valor como tal.
-                        result = node.Token.Value;
-                        break;
-                    }
-                case "proteccion":
-                    {
-                        //por ser un terminal se retorna su valor como tal.
-                        result = node.Token.Value;
-                        break;
-                    }
-                case "velocidad":
-                    {
-                        //por ser un terminal se retorna su valor como tal.
-                        result = node.Token.Value;
-                        break;
-                    }
-                case "enemigos":
-                    {
-                        //por ser un terminal se retorna su valor como tal.
-                        result = node.Token.Value;
-                        break;
-                    }
-                case "nombre":
-                    {
-                        //por ser un terminal se retorna su valor como tal.
-                        result = node.Token.Value;
-                        break;
-                    }
+               
             }
             return result;
         }

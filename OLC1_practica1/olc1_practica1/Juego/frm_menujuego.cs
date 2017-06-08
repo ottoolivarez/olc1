@@ -12,10 +12,10 @@ namespace OLC1_practica1.Juego
 {
     public partial class frm_menujuego : Form
     {
-        ArrayList escenarios;
-        ArrayList naves;
-        ArrayList defensas;
-        ArrayList enemigos;
+        public ArrayList escenarios{get; set;}
+       public ArrayList naves { get; set; }
+       public ArrayList defensas { get; set; }
+       public ArrayList enemigos { get; set; }
 
         public frm_menujuego()
         {

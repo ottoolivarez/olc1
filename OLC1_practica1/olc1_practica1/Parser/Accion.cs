@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Irony.Parsing;
 
-namespace EjemploIrony1
+namespace OLC1_practica1.Compilador
 {
     //clase utilizada para asociar acciones a una gramatica. simplemente se puede copiar
     // y pegar ya que solo se llama en la clase asociada a las acciones de nuestra gramatica.

@@ -21,3 +21,10 @@ C:\Users\otto\Dropbox\OLC1_2017\OLC1_practica1\OLC1_practica1\bin\Debug\OLC1_pra
 C:\Users\oolivarez\Documents\GitHub\olc1\OLC1_practica1\OLC1_practica1\bin\Debug\OLC1_practica1.exe.config
 C:\Users\oolivarez\Documents\GitHub\olc1\OLC1_practica1\OLC1_practica1\obj\Debug\OLC1_practica1.exe
 C:\Users\oolivarez\Documents\GitHub\olc1\OLC1_practica1\OLC1_practica1\obj\Debug\OLC1_practica1.pdb
+C:\Users\oolivarez\Documents\GitHub\olc1\OLC1_practica1\OLC1_practica1\obj\Debug\OLC1_practica1.frm_juego.resources
+C:\Users\oolivarez\Documents\GitHub\olc1\OLC1_practica1\OLC1_practica1\obj\Debug\OLC1_practica1.Main.resources
+C:\Users\oolivarez\Documents\GitHub\olc1\OLC1_practica1\OLC1_practica1\obj\Debug\OLC1_practica1.Properties.Resources.resources
+C:\Users\oolivarez\Documents\GitHub\olc1\OLC1_practica1\OLC1_practica1\obj\Debug\OLC1_practica1.csproj.GenerateResource.Cache
+C:\Users\oolivarez\Documents\GitHub\olc1\OLC1_practica1\OLC1_practica1\bin\Debug\OLC1_practica1.exe
+C:\Users\oolivarez\Documents\GitHub\olc1\OLC1_practica1\OLC1_practica1\bin\Debug\OLC1_practica1.pdb
+C:\Users\oolivarez\Documents\GitHub\olc1\OLC1_practica1\OLC1_practica1\obj\Debug\OLC1_practica1.csprojResolveAssemblyReference.cache

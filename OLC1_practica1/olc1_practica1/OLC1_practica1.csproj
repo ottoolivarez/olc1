@@ -56,6 +56,8 @@
     <Compile Include="frm_juego.Designer.cs">
       <DependentUpon>frm_juego.cs</DependentUpon>
     </Compile>
+    <Compile Include="Juego\defensa.cs" />
+    <Compile Include="Juego\enemigo.cs" />
     <Compile Include="Juego\frm_menujuego.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -9,7 +9,7 @@ using Irony.Parsing;
 /*Esta clase practicamente no cambia ya que solamente se llama en la clase principal para
 parsear el texto por lo que solamente se copia y se pega sin ningun problema */
 
-namespace EjemploIrony1
+namespace OLC1_practica1.Compilador
 {
     class Analizador
     {

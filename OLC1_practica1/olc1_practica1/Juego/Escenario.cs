@@ -10,7 +10,7 @@ namespace OLC1_practica1.Juego
     class Escenario: System.Windows.Forms.Panel
     {
         
-        Escenario() {
+      public  Escenario() {
 
             this.Size = new Size(400, 300);
             this.BackgroundImage = (Bitmap)Image.FromFile(@"C:\Users\otto\Pictures\starwars1.jpg");
