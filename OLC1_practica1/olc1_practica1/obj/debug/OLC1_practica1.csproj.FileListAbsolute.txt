@@ -1,12 +1,23 @@
-c:\users\otto\documents\visual studio 2013\Projects\OLC1_practica1\OLC1_practica1\bin\Debug\OLC1_practica1.exe.config
-c:\users\otto\documents\visual studio 2013\Projects\OLC1_practica1\OLC1_practica1\bin\Debug\OLC1_practica1.exe
-c:\users\otto\documents\visual studio 2013\Projects\OLC1_practica1\OLC1_practica1\bin\Debug\OLC1_practica1.pdb
-c:\users\otto\documents\visual studio 2013\Projects\OLC1_practica1\OLC1_practica1\bin\Debug\Irony.dll
-c:\users\otto\documents\visual studio 2013\Projects\OLC1_practica1\OLC1_practica1\obj\Debug\OLC1_practica1.csprojResolveAssemblyReference.cache
-c:\users\otto\documents\visual studio 2013\Projects\OLC1_practica1\OLC1_practica1\obj\Debug\OLC1_practica1.Properties.Resources.resources
-c:\users\otto\documents\visual studio 2013\Projects\OLC1_practica1\OLC1_practica1\obj\Debug\OLC1_practica1.csproj.GenerateResource.Cache
-c:\users\otto\documents\visual studio 2013\Projects\OLC1_practica1\OLC1_practica1\obj\Debug\OLC1_practica1.exe
-c:\users\otto\documents\visual studio 2013\Projects\OLC1_practica1\OLC1_practica1\obj\Debug\OLC1_practica1.pdb
-C:\Users\oolivarez\Documents\Visual Studio 2012\Projects\OLC1_practica1\OLC1_practica1\bin\Debug\OLC1_practica1.exe.config
-C:\Users\oolivarez\Documents\Visual Studio 2012\Projects\OLC1_practica1\OLC1_practica1\obj\Debug\OLC1_practica1.exe
-C:\Users\oolivarez\Documents\Visual Studio 2012\Projects\OLC1_practica1\OLC1_practica1\obj\Debug\OLC1_practica1.pdb
+C:\Users\otto\documents\visual studio 2013\Projects\OLC1_practica1\OLC1_practica1\obj\Debug\OLC1_practica1.Properties.Resources.resources
+C:\Users\otto\documents\visual studio 2013\Projects\OLC1_practica1\OLC1_practica1\obj\Debug\OLC1_practica1.csproj.GenerateResource.Cache
+C:\Users\otto\documents\visual studio 2013\Projects\OLC1_practica1\OLC1_practica1\bin\Debug\OLC1_practica1.exe.config
+C:\Users\otto\documents\visual studio 2013\Projects\OLC1_practica1\OLC1_practica1\bin\Debug\OLC1_practica1.exe
+C:\Users\otto\documents\visual studio 2013\Projects\OLC1_practica1\OLC1_practica1\bin\Debug\OLC1_practica1.pdb
+C:\Users\otto\documents\visual studio 2013\Projects\OLC1_practica1\OLC1_practica1\bin\Debug\Irony.dll
+C:\Users\otto\documents\visual studio 2013\Projects\OLC1_practica1\OLC1_practica1\obj\Debug\OLC1_practica1.exe
+C:\Users\otto\documents\visual studio 2013\Projects\OLC1_practica1\OLC1_practica1\obj\Debug\OLC1_practica1.pdb
+C:\Users\otto\Documents\Visual Studio 2013\Projects\OLC1_practica1\OLC1_practica1\obj\Debug\OLC1_practica1.frm_juego.resources
+C:\Users\otto\Documents\Visual Studio 2013\Projects\OLC1_practica1\OLC1_practica1\obj\Debug\OLC1_practica1.Main.resources
+C:\Users\otto\documents\visual studio 2013\Projects\OLC1_practica1\OLC1_practica1\obj\Debug\OLC1_practica1.csprojResolveAssemblyReference.cache
+C:\Users\otto\Dropbox\OLC1_2017\OLC1_practica1\OLC1_practica1\bin\Debug\OLC1_practica1.exe.config
+C:\Users\otto\Dropbox\OLC1_2017\OLC1_practica1\OLC1_practica1\obj\Debug\OLC1_practica1.exe
+C:\Users\otto\Dropbox\OLC1_2017\OLC1_practica1\OLC1_practica1\obj\Debug\OLC1_practica1.pdb
+C:\Users\otto\Dropbox\OLC1_2017\OLC1_practica1\OLC1_practica1\obj\Debug\OLC1_practica1.frm_juego.resources
+C:\Users\otto\Dropbox\OLC1_2017\OLC1_practica1\OLC1_practica1\obj\Debug\OLC1_practica1.Main.resources
+C:\Users\otto\Dropbox\OLC1_2017\OLC1_practica1\OLC1_practica1\obj\Debug\OLC1_practica1.Properties.Resources.resources
+C:\Users\otto\Dropbox\OLC1_2017\OLC1_practica1\OLC1_practica1\obj\Debug\OLC1_practica1.csproj.GenerateResource.Cache
+C:\Users\otto\Dropbox\OLC1_2017\OLC1_practica1\OLC1_practica1\bin\Debug\OLC1_practica1.exe
+C:\Users\otto\Dropbox\OLC1_2017\OLC1_practica1\OLC1_practica1\bin\Debug\OLC1_practica1.pdb
+C:\Users\oolivarez\Documents\GitHub\olc1\OLC1_practica1\OLC1_practica1\bin\Debug\OLC1_practica1.exe.config
+C:\Users\oolivarez\Documents\GitHub\olc1\OLC1_practica1\OLC1_practica1\obj\Debug\OLC1_practica1.exe
+C:\Users\oolivarez\Documents\GitHub\olc1\OLC1_practica1\OLC1_practica1\obj\Debug\OLC1_practica1.pdb

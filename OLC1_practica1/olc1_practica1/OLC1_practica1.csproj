@@ -50,23 +50,41 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="frm_juego.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="frm_juego.Designer.cs">
+      <DependentUpon>frm_juego.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Juego\frm_menujuego.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Juego\frm_menujuego.Designer.cs">
+      <DependentUpon>frm_menujuego.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
     </Compile>
     <Compile Include="Juego\Escenario.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Juego\UserControl1.xaml.cs">
-      <DependentUpon>UserControl1.xaml</DependentUpon>
+    <Compile Include="Juego\Nave.cs">
+      <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Parser\Accion.cs" />
+    <Compile Include="Parser\AccionesGramatica.cs" />
+    <Compile Include="Parser\Analizador.cs" />
     <Compile Include="Parser\Gramatica.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="frm_juego.resx">
+      <DependentUpon>frm_juego.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -89,12 +107,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Page Include="Juego\UserControl1.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
