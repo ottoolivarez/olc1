@@ -19,7 +19,9 @@ namespace OLC1_practica1.Compilador
             IdentifierTerminal identifier = new IdentifierTerminal("identifier");
 
             CommentTerminal comment = new CommentTerminal("multilineComment", "/*", "*/");
+            CommentTerminal comment2 = new CommentTerminal("linecomment", "//", "\n","\r");
             NonGrammarTerminals.Add(comment);
+            NonGrammarTerminals.Add(comment2);
            // var comillas = new RegexBasedTerminal("comillas", "[\"]");
            // var dospuntos = new RegexBasedTerminal("dospuntos", "[:]");
             var coma = new RegexBasedTerminal("coma", "[,]");
@@ -65,7 +67,7 @@ namespace OLC1_practica1.Compilador
                         t = new NonTerminal("t"),
                         f = new NonTerminal("f"),
                         ini= new NonTerminal("ini"),
-                        tagini=new NonTerminal(""),
+                        tagini = new NonTerminal("tagini"),
                         componentes= new NonTerminal("componentes"),
                         esc =new NonTerminal("esc"),
                         //nuevoesc=new NonTerminal("nuevoesc"),
@@ -89,22 +91,28 @@ namespace OLC1_practica1.Compilador
             
             ini.Rule= tagini + componentes;
 
-componentes.Rule=	esc +componentes
-		            |nav +componentes
-		            |def +componentes
-		            |ene +componentes
-		            |fin;
+            componentes.Rule=	esc + componentes
+		                        | nav + componentes
+		                        | def + componentes
+		                        | ene + componentes
+                                | nfin;
 
+            tagini.Rule = "[" + inicio + "/" + identifier + "]" ;
 
-tagini.Rule= "["+ inicio +"/"+ identifier +"]";
-esc.Rule= "["+ escenarios +"/"+ identifier +"]"+ fondo +"="+ cadena +","+ sonido +"="+ cadena +"$";
-nav.Rule="["+naves +"/"+ identifier +"]" + imagen_nave +"="+ cadena +","+ imagen_disparo +"="+ cadena +","+ sonido_disparo +"="+ cadena +","+ vida +"="+ e +","+ ataque +"="+ e +"$";
-def.Rule= "["+defensas +"/"+ identifier +"]"+ imagen_defensa +"="+ cadena +","+ proteccion +"="+ e +","+ velocidad +"="+ e +"$";
-ene.Rule= "["+enemigos+"/"+ identifier +"]"+ nombre +"="+ cadena +","+ imagen_enemigo +"="+ cadena +","+  imagen_disparo +"="+ cadena +","+ sonido_disparo +"="+ cadena +","+ vida +"="+ e +","+ ataque +"="+ e +","+ frecuencia +"="+ e +","+ velocidad + "="+ e +","+ punteo +"="+ e +"$";
+            esc.Rule = "[" + escenarios + "/" + identifier + "]" + fondo + "=" + cadena + "," + sonido +"="+ cadena +"$";
+            
+            nav.Rule = "[" + naves + "/" + identifier + "]" + imagen_nave + "=" + cadena + "," + imagen_disparo +"="+ cadena +","+ sonido_disparo +"="+ cadena +","+ vida +"="+ e +","+ ataque +"="+ e +"$";
+            
+            def.Rule = "[" + defensas + "/" + identifier + "]" + imagen_defensa + "=" + cadena + "," + proteccion +"="+ e +","+ velocidad +"="+ e +"$";
+            
+            ene.Rule = "[" + enemigos + "/" + identifier + "]" + nombre + "=" + cadena + ","+ imagen_enemigo +"="+ cadena +","+  imagen_disparo +"="+ cadena +","+ sonido_disparo +"="+ cadena +","+ vida +"="+ e +","+ ataque +"="+ e +","+ frecuencia +"="+ e +","+ velocidad + "="+ e +","+ punteo +"="+ e +"$";
+            
+            nfin.Rule = "[" + fin + "/" + identifier + "]";
 
             e.Rule = e + "+" + t
                 | e + "-" + t
                 | t;
+
             t.Rule = t + "*" + f
                 | t + "/" + f
                 | f;

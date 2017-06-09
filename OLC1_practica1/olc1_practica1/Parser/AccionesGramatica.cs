@@ -32,6 +32,12 @@ namespace OLC1_practica1.Compilador
                         }
                         break;
                     }
+                case "ini":
+                    {
+                        
+                            result = action(node.ChildNodes[1]);
+                        break;
+                    }
                 case "e":
                     {
                         /*en este caso como la produccion de e (e.Rule) tiene 3 reglas  e = e+t, e= e-t, e = t
@@ -104,11 +110,13 @@ namespace OLC1_practica1.Compilador
 /*
  * T E R M I N A L E S
  */
+
                 case "componentes":
                     {
                         if (node.ChildNodes.Count == 1)
                         {
                             result = new frm_menujuego();
+                            Console.Out.WriteLine(result.GetType().ToString());
                         }
                         //si hay dos no terminales que pueden ser:
                         /* esc componentes
@@ -120,26 +128,29 @@ namespace OLC1_practica1.Compilador
                         {
                             var cmpts = (frm_menujuego)(action(node.ChildNodes[1]));
                             var cmp = action(node.ChildNodes[0]);
-                            if (node.ChildNodes[1].Token.Value.ToString() == "esc")
-                            {
-                                cmpts.escenarios.Add((Escenario)cmp);
-                                result = cmpts;
-                            }
-                            else if (node.ChildNodes[1].Token.Value.ToString() == "nav")
-                            {
-                                cmpts.naves.Add((Nave)cmp);
-                                result = cmpts;
-                            }
-                            else if (node.ChildNodes[1].Token.Value.ToString() == "def")
-                            {
-                                cmpts.defensas.Add((defensa)cmp);
-                                result = cmpts;
-                            }
-                            else if (node.ChildNodes[1].Token.Value.ToString() == "ene")
-                            {
-                                cmpts.enemigos.Add((enemigo)cmp);
-                                result = cmpts;
-                            }
+
+                            Console.Out.WriteLine(cmp.GetType().ToString());
+                            
+                            if (cmp.GetType().ToString() == "OLC1_practica1.Juego.Escenario")
+                               {
+                                   cmpts.escenarios.Add((Escenario)cmp);
+                                   result = cmpts;
+                               }
+                            else if (cmp.GetType().ToString() == "OLC1_practica1.Juego.Nave")
+                               {
+                                   cmpts.naves.Add((Nave)cmp);
+                                   result = cmpts;
+                               }
+                            else if (cmp.GetType().ToString() == "OLC1_practica1.Juego.defensa")
+                               {
+                                   cmpts.defensas.Add((defensa)cmp);
+                                   result = cmpts;
+                               }
+                            else if (cmp.GetType().ToString() == "OLC1_practica1.Juego.enemigo")
+                               {
+                                   cmpts.enemigos.Add((enemigo)cmp);
+                                   result = cmpts;
+                               }
                         }
                         break;
                     }
