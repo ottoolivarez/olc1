@@ -117,4 +117,63 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="textBox1.Text" xml:space="preserve">
+    <value>[inicio/nombreJuego]
+[escenarios/escenario1]
+fondo = "C:\Users\otto\Pictures\Practica1\starwars1.jpg" ,
+sonido= "C:\Users\otto\Pictures\Practica1\imperial_march.wav"
+$
+[escenarios/escenario2]
+fondo = "C:\Users\otto\Pictures\starwars3.jpg" ,
+sonido = "C:\Users\otto\Pictures\Practica1\rebel-theme.wav"
+$
+[naves/nave1]
+imagen_nave="C:\Users\otto\Pictures\Practica1\nave1.PNG",
+imagen_disparo="C:\Users\otto\Pictures\Practica1\disparo1.PNG",
+sonido_disparo="C:\Users\otto\Pictures\Practica1\blaster-firing.wav",
+vida=100,
+ataque=50
+$[naves/nave2]
+imagen_nave="C:\Users\otto\Pictures\Practica1\nave2.PNG",
+imagen_disparo="C:\Users\otto\Pictures\Practica1\disparo2.PNG",
+sonido_disparo="C:\Users\otto\Pictures\Practica1\blaster-firing.wav",
+vida=80,
+ataque=70
+$
+[defensas/defensa1 ]
+imagen_defensa=" C:\Users\estudiante\Pictures\CarpetaPractica\def1.png",
+proteccion=40,
+velocidad= 40+10
+$
+[defensas/defensa2]
+imagen_defensa=" C:\Users\estudiante\Pictures\CarpetaPractica\def2.png",
+proteccion=10,
+velocidad= 4*3+3-(2*2+1)
+$
+[enemigos/enemigo1]
+nombre="Enemigo1",
+imagen_enemigo="C:\Users\estudiante\Pictures\CarpetaPractica\img.png",
+imagen_disparo=" C:\Users\estudiante\Pictures\CarpetaPractica\disparo.png",
+sonido_disparo=" C:\Users\estudiante\music\sonido.mp3",
+vida=100,
+ataque=5,
+frecuencia=5,
+velocidad= 5,
+punteo= 10
+/* Este es un comentario multilinea */
+$
+[enemigos/enemigo2]
+nombre="Enemigo2",
+imagen_enemigo=" C:\Users\estudiante\Pictures\CarpetaPractica\img.png",
+imagen_disparo=" C:\Users\estudiante\Pictures\CarpetaPractica\disparo.png",
+sonido_disparo=" C:\Users\estudiante\music\sonido.mp3",
+vida=100,
+ataque=5,
+frecuencia= 3,
+//se podran realizar operaciones aritmeticas
+velocidad= 4*3+3-(2*2+1),
+punteo= 8 
+$
+[fin/nombreJuego]</value>
+  </data>
 </root>

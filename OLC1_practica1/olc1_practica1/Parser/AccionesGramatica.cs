@@ -107,7 +107,13 @@ namespace OLC1_practica1.Compilador
                         break;
                     }
 
-/*
+                case "enteros":
+                    {
+                        //por ser un terminal se retorna su valor como tal.
+                        result = node.Token.Value;
+                        break;
+                    }
+                /*
  * T E R M I N A L E S
  */
 
@@ -163,7 +169,11 @@ namespace OLC1_practica1.Compilador
                     }
                 case "nav":
                     {
-                        var nuevanave = new Nave();
+                        var nuevanave = new Nave(node.ChildNodes[7].Token.Value.ToString(),
+                            node.ChildNodes[11].Token.Value.ToString(),
+                            node.ChildNodes[15].Token.Value.ToString(),
+                            int.Parse(action(node.ChildNodes[19]).ToString()),
+                            int.Parse(action(node.ChildNodes[23]).ToString()));//Nave(node.ChildNodes[7], node.ChildNodes[7]);
                         result = nuevanave;
                         break;
                     }

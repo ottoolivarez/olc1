@@ -32,15 +32,14 @@
             this.btnsiguiente = new System.Windows.Forms.Button();
             this.btnselecionar = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnEscSeleccionar = new System.Windows.Forms.Button();
             this.btnEscSiguiente = new System.Windows.Forms.Button();
             this.btnEscAnterior = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btnJugar = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // btnanterior
@@ -61,6 +60,7 @@
             this.btnsiguiente.TabIndex = 1;
             this.btnsiguiente.Text = "Siguiente";
             this.btnsiguiente.UseVisualStyleBackColor = true;
+            this.btnsiguiente.Click += new System.EventHandler(this.btnsiguiente_Click);
             // 
             // btnselecionar
             // 
@@ -78,14 +78,6 @@
             this.pictureBox1.Size = new System.Drawing.Size(156, 156);
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Location = new System.Drawing.Point(311, 31);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(156, 156);
-            this.pictureBox2.TabIndex = 7;
-            this.pictureBox2.TabStop = false;
             // 
             // btnEscSeleccionar
             // 
@@ -141,15 +133,22 @@
             this.btnJugar.Text = "JUGAR";
             this.btnJugar.UseVisualStyleBackColor = true;
             // 
+            // panel1
+            // 
+            this.panel1.Location = new System.Drawing.Point(314, 31);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(153, 156);
+            this.panel1.TabIndex = 11;
+            // 
             // frm_menujuego
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(570, 378);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnJugar);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.btnEscSeleccionar);
             this.Controls.Add(this.btnEscSiguiente);
             this.Controls.Add(this.btnEscAnterior);
@@ -160,7 +159,6 @@
             this.Name = "frm_menujuego";
             this.Text = "frm_menujuego";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -172,12 +170,12 @@
         private System.Windows.Forms.Button btnsiguiente;
         private System.Windows.Forms.Button btnselecionar;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button btnEscSeleccionar;
         private System.Windows.Forms.Button btnEscSiguiente;
         private System.Windows.Forms.Button btnEscAnterior;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnJugar;
+        private System.Windows.Forms.Panel panel1;
     }
 }

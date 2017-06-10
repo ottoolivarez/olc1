@@ -28,7 +28,7 @@ namespace OLC1_practica1.Compilador
            // var puntoyComa = new RegexBasedTerminal("coma", "[;]");
             var igual = new RegexBasedTerminal("igual", "[=]");
             //var numero = TerminalFactory.CreateCSharpNumber("numero");
-            var cadena = new StringLiteral("cadena", "\"", StringOptions.None); //Esta joya ya nos hace el business de "algo" XD
+            var cadena = new StringLiteral("cadena", "\"", StringOptions.NoEscapes); //Esta joya ya nos hace el business de "algo" XD
             
             var inicio = ToTerm("inicio");
             var escenarios = ToTerm("escenarios");

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -41,30 +42,31 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(287, 160);
             this.textBox1.TabIndex = 0;
+            this.textBox1.Text = resources.GetString("textBox1.Text");
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(443, 148);
+            this.button1.Location = new System.Drawing.Point(396, 121);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(96, 51);
             this.button1.TabIndex = 1;
-            this.button1.Text = "button1";
+            this.button1.Text = "CARGAR JUEGO";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(346, 217);
+            this.textBox2.Location = new System.Drawing.Point(396, 12);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(287, 84);
+            this.textBox2.Size = new System.Drawing.Size(255, 105);
             this.textBox2.TabIndex = 2;
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(75, 217);
+            this.richTextBox1.Location = new System.Drawing.Point(103, 178);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(253, 132);
+            this.richTextBox1.Size = new System.Drawing.Size(287, 132);
             this.richTextBox1.TabIndex = 3;
             this.richTextBox1.Text = "";
             // 
