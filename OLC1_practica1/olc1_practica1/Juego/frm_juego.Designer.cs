@@ -41,6 +41,7 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
+            this.tmrDisparosNave = new System.Windows.Forms.Timer(this.components);
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -157,6 +158,11 @@
             this.label13.TabIndex = 9;
             this.label13.Text = "label13";
             // 
+            // tmrDisparosNave
+            // 
+            this.tmrDisparosNave.Interval = 50;
+            this.tmrDisparosNave.Tick += new System.EventHandler(this.tmrDisparosNave_Tick);
+            // 
             // frm_juego
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -195,5 +201,6 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Timer tmrDisparosNave;
     }
 }

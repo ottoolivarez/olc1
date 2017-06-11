@@ -108,7 +108,7 @@ namespace OLC1_practica1.Juego
             var miescenario = (Escenario)this.escenarios[this.pos_esc_arrlist];
             var minave = (Nave)this.naves[this.pos_nave_arrlist];
             minave.Location = new Point( miescenario.Left+ miescenario.Bounds.Width / 2
-                , miescenario.Bounds.Bottom-55);
+                , miescenario.Bounds.Bottom-minave.Bounds.Height);
             mijuego.miEscenaro=miescenario;
             mijuego.miNave=minave;
             mijuego.Show();

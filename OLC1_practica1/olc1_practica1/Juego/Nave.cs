@@ -9,7 +9,7 @@ namespace OLC1_practica1.Juego
     public class Nave : System.Windows.Forms.PictureBox
     {
        // public string pathimagen { get; set; }
-       // public string pathdisparo { get; set; }
+        public string pathdisparo { get; set; }
        // public string pathsonidodisparo { get; set; }
         public System.Media.SoundPlayer sonido_disparo;
         public int vida { get; set; }
@@ -26,10 +26,11 @@ namespace OLC1_practica1.Juego
             this.Image = (Bitmap)Image.FromFile(@pathimagen);
             this.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.sonido_disparo = new System.Media.SoundPlayer(pathsonidodisparo);
+            this.pathdisparo = pathdisparo;
             this.vida=vida;
             this.ataque = ataque;
             this.Location = new Point(363, 0);
-            this.Size = new Size(30,45);
+            this.Size = new Size(65,70);
         }
         public Nave() { }
 

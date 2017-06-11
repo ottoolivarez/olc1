@@ -36,16 +36,16 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(103, 12);
+            this.textBox1.Location = new System.Drawing.Point(12, 12);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(287, 160);
+            this.textBox1.Size = new System.Drawing.Size(667, 160);
             this.textBox1.TabIndex = 0;
             this.textBox1.Text = resources.GetString("textBox1.Text");
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(396, 121);
+            this.button1.Location = new System.Drawing.Point(583, 172);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(96, 51);
             this.button1.TabIndex = 1;
@@ -55,9 +55,9 @@
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(103, 178);
+            this.richTextBox1.Location = new System.Drawing.Point(12, 229);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(287, 132);
+            this.richTextBox1.Size = new System.Drawing.Size(667, 132);
             this.richTextBox1.TabIndex = 3;
             this.richTextBox1.Text = "";
             // 
