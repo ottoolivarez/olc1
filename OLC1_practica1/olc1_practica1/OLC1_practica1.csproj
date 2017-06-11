@@ -51,7 +51,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Juego\defensa.cs" />
-    <Compile Include="Juego\enemigo.cs" />
+    <Compile Include="Juego\enemigo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Juego\frm_juego.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Juego\frm_juego.Designer.cs">
+      <DependentUpon>frm_juego.cs</DependentUpon>
+    </Compile>
     <Compile Include="Juego\frm_menujuego.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,6 +84,9 @@
     <Compile Include="Parser\Gramatica.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Juego\frm_juego.resx">
+      <DependentUpon>frm_juego.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Juego\frm_menujuego.resx">
       <DependentUpon>frm_menujuego.cs</DependentUpon>
     </EmbeddedResource>

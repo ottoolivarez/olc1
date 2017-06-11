@@ -163,7 +163,8 @@ namespace OLC1_practica1.Compilador
                 case "esc":
                     {
                         //por ser un terminal se retorna su valor como tal.
-                        var nuevoesc = new Escenario();
+                        var nuevoesc = new Escenario(node.ChildNodes[7].Token.Value.ToString(),
+                            node.ChildNodes[11].Token.Value.ToString());
                         result = nuevoesc;
                         break;
                     }

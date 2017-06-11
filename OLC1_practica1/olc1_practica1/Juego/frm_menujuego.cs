@@ -37,7 +37,10 @@ namespace OLC1_practica1.Juego
             this.pos_nave_arrlist = 0;
             var pb = (Nave)naves[0];
             this.pictureBox1.Image = pb.Image;
-            //this.Controls.Add(pb);
+
+            this.pos_esc_arrlist = 0;
+            var pb2 = (Escenario)escenarios[0];
+            this.pictureBox2.Image = pb2.BackgroundImage;
             //call the shadowed Show method on our form.       
             base.Show();
 
@@ -62,6 +65,54 @@ namespace OLC1_practica1.Juego
                 this.pictureBox1.Image = pb.Image;
                 this.Refresh();
             }
+        }
+
+        private void btnEscAnterior_Click(object sender, EventArgs e)
+        {
+            if (this.pos_esc_arrlist > 0)
+            {
+                pos_esc_arrlist--;
+                var pb = (Escenario)escenarios[pos_esc_arrlist];
+                this.pictureBox2.Image = pb.BackgroundImage;
+            }
+        }
+
+        private void btnEscSiguiente_Click(object sender, EventArgs e)
+        {
+            if (this.pos_esc_arrlist < escenarios.Count - 1)
+            {
+                pos_esc_arrlist++;
+                var pb = (Escenario)escenarios[pos_esc_arrlist];
+                this.pictureBox2.Image = pb.BackgroundImage;
+                this.Refresh();
+            }
+        }
+
+        private void btnselecionar_Click(object sender, EventArgs e)
+        {
+            btnanterior.Enabled = false;
+            btnsiguiente.Enabled=false;
+        }
+
+        private void btnEscSeleccionar_Click(object sender, EventArgs e)
+        {
+            btnEscAnterior.Enabled = false;
+            btnEscSiguiente.Enabled = false;
+        }
+
+        private void btnJugar_Click(object sender, EventArgs e)
+        {
+            frm_juego mijuego = new frm_juego();
+            mijuego.enemigos = this.enemigos;
+
+            var miescenario = (Escenario)this.escenarios[this.pos_esc_arrlist];
+            var minave = (Nave)this.naves[this.pos_nave_arrlist];
+            minave.Location = new Point( miescenario.Left+ miescenario.Bounds.Width / 2
+                , miescenario.Bounds.Bottom-55);
+            mijuego.miEscenaro=miescenario;
+            mijuego.miNave=minave;
+            mijuego.Show();
+
         }
 
         

@@ -38,8 +38,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btnJugar = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // btnanterior
@@ -70,12 +71,14 @@
             this.btnselecionar.TabIndex = 2;
             this.btnselecionar.Text = "Seleccionar";
             this.btnselecionar.UseVisualStyleBackColor = true;
+            this.btnselecionar.Click += new System.EventHandler(this.btnselecionar_Click);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Location = new System.Drawing.Point(77, 31);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(156, 156);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
@@ -87,6 +90,7 @@
             this.btnEscSeleccionar.TabIndex = 6;
             this.btnEscSeleccionar.Text = "Seleccionar";
             this.btnEscSeleccionar.UseVisualStyleBackColor = true;
+            this.btnEscSeleccionar.Click += new System.EventHandler(this.btnEscSeleccionar_Click);
             // 
             // btnEscSiguiente
             // 
@@ -96,6 +100,7 @@
             this.btnEscSiguiente.TabIndex = 5;
             this.btnEscSiguiente.Text = "Siguiente";
             this.btnEscSiguiente.UseVisualStyleBackColor = true;
+            this.btnEscSiguiente.Click += new System.EventHandler(this.btnEscSiguiente_Click);
             // 
             // btnEscAnterior
             // 
@@ -105,6 +110,7 @@
             this.btnEscAnterior.TabIndex = 4;
             this.btnEscAnterior.Text = "Anterior";
             this.btnEscAnterior.UseVisualStyleBackColor = true;
+            this.btnEscAnterior.Click += new System.EventHandler(this.btnEscAnterior_Click);
             // 
             // label1
             // 
@@ -132,20 +138,23 @@
             this.btnJugar.TabIndex = 10;
             this.btnJugar.Text = "JUGAR";
             this.btnJugar.UseVisualStyleBackColor = true;
+            this.btnJugar.Click += new System.EventHandler(this.btnJugar_Click);
             // 
-            // panel1
+            // pictureBox2
             // 
-            this.panel1.Location = new System.Drawing.Point(314, 31);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(153, 156);
-            this.panel1.TabIndex = 11;
+            this.pictureBox2.Location = new System.Drawing.Point(311, 29);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(156, 158);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 11;
+            this.pictureBox2.TabStop = false;
             // 
             // frm_menujuego
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(570, 378);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.btnJugar);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -159,6 +168,7 @@
             this.Name = "frm_menujuego";
             this.Text = "frm_menujuego";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -176,6 +186,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnJugar;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

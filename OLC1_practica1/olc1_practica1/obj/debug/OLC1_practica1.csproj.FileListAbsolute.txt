@@ -38,4 +38,5 @@ C:\Users\otto\Documents\GitHub\olc1\OLC1_practica1\OLC1_practica1\obj\Debug\OLC1
 C:\Users\otto\Documents\GitHub\olc1\OLC1_practica1\OLC1_practica1\obj\Debug\OLC1_practica1.Properties.Resources.resources
 C:\Users\otto\Documents\GitHub\olc1\OLC1_practica1\OLC1_practica1\obj\Debug\OLC1_practica1.csproj.GenerateResource.Cache
 C:\Users\otto\Documents\GitHub\olc1\OLC1_practica1\OLC1_practica1\obj\Debug\OLC1_practica1.Juego.frm_menujuego.resources
+C:\Users\otto\Documents\GitHub\olc1\OLC1_practica1\OLC1_practica1\obj\Debug\OLC1_practica1.Juego.frm_juego.resources
 C:\Users\otto\Documents\GitHub\olc1\OLC1_practica1\OLC1_practica1\obj\Debug\OLC1_practica1.csprojResolveAssemblyReference.cache

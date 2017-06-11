@@ -8,7 +8,7 @@ using System.Media;
 
 namespace OLC1_practica1.Juego
 {
-    class Escenario: System.Windows.Forms.Panel
+   public class Escenario: System.Windows.Forms.Panel
     {
         public string pathimg { get; set; }
         public string pathsonido { get; set; }
@@ -21,6 +21,8 @@ namespace OLC1_practica1.Juego
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             ssound = new SoundPlayer(pathsonido);
             //ssound.PlayLooping();
+            this.Size = new Size(726, 409);
+            this.Location = new Point(173,12);
         }
 
       public Escenario() { 
